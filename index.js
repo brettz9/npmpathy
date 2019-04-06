@@ -6,7 +6,9 @@ document.documentElement.lang = 'en-US';
 document.title = _('NPMpathy');
 
 const w = new HTMLWidgets({_});
-const input = w.input.bind(w);
+
+const input = w.input.bind(w),
+  textarea = w.textarea.bind(w);
 
 jml('div', {role: 'main'}, [
   ['form', {$on: {
@@ -16,6 +18,6 @@ jml('div', {role: 'main'}, [
   }}, [
     input({label: 'Name', name: 'name'}),
     input({label: 'Version', name: 'version'}),
-    input({label: 'Description', name: 'description'})
+    textarea({label: 'Description', name: 'description'})
   ]]
 ], body);

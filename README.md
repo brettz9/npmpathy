@@ -6,7 +6,8 @@ PROJECT NOT YET FUNCTIONAL.
 
 ## To-dos
 
-1. Allow editing of `package.json`
+1. Allow editing of `package.json`, ensuring non-recognized fields can be
+  edited as JSON
 
 ## Possible to-dos (or wish-list)
 
@@ -24,3 +25,4 @@ Some wishes, but not necessarily with plans to follow-through!
 1. Pull-down to switch between `package.json` of other open repos in Atom.
 1. JSON-Schema-driven ESLint (and options) editing (npmpathy desired to
     function not only for npm, but related).
+1. Add [license-checker](https://www.npmjs.com/package/license-checker)

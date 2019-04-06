@@ -6,8 +6,11 @@ PROJECT NOT YET FUNCTIONAL.
 
 ## To-dos
 
-1. Allow editing of `package.json`, ensuring non-recognized fields can be
-  edited as JSON
+1. Allow editing of `package.json`
+  1. Allow overwriting existing
+  1. Adding new properties
+  1. Delete existing
+  1. Ensure non-recognized fields can be edited as JSON
 
 ## Possible to-dos (or wish-list)
 

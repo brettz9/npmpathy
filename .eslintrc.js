@@ -25,6 +25,7 @@ module.exports = {
         'document.querySelectorAll',
         'Error',
         'JSON',
+        'Map',
         'Number.isInteger',
         'Number.isNaN',
         'Object.assign',

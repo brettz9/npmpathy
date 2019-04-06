@@ -1,4 +1,5 @@
 const nbsp = '\u00A0';
+const noop = () => { /* */ };
 
 export default class HTMLWidgets {
   constructor ({_, ns} = {}) {
@@ -8,7 +9,7 @@ export default class HTMLWidgets {
       ns: ''
     });
   }
-  textarea ({label, name}) {
+  textarea ({label, name, change = noop}) {
     this._ct++;
     const areaLabel = this._(this.ns + label);
     const textareaID = `${this.ns}-textarea-${this._ct}`;
@@ -22,23 +23,15 @@ export default class HTMLWidgets {
         name,
         // 'aria-label': areaLabel,
         // placeholder: areaLabel,
-        $on: {
-          change () {
-
-          }
-        }
+        $on: {change}
       }]
     ]];
   }
-  input ({label, name}) {
+  input ({label, name, change = noop, input = noop}) {
     return ['div', [
       ['label', [
         this._(this.ns + label), nbsp.repeat(2),
-        ['input', {name, $on: {
-          change () {
-
-          }
-        }}]
+        ['input', {name, $on: {change, input}}]
       ]]
     ]];
   }

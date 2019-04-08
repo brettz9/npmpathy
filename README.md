@@ -32,3 +32,4 @@ Some wishes, but not necessarily with plans to follow-through!
 1. Make a pseudo-standard field (under `directories`?) for `changes` to
     point to a `CHANGES.md` file (and check common names listed at
     <https://docs.npmjs.com/files/package.json#files>).
+1. Parse `browserslist` to display browser icons

@@ -63,6 +63,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "semver": "^6.3.0",
     "testcafe": "^1.6.1",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.2",
+    "validate-npm-package-name": "^3.0.0"
   }
 }

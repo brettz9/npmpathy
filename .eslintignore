@@ -1,2 +1,3 @@
 node_modules
-external/semver/index.es.js
+external
+!external/HTMLWidgets

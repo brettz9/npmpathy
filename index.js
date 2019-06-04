@@ -40,14 +40,14 @@ jml('div', {role: 'main'}, [
     }
   }}, [
     input({label: 'Name', name: 'name', input () {
-      validate(this.value, _('Invalid_Name'), (v) => {
+      validate.call(this, this.value, _('Invalid_Name'), (v) => {
         // Todo: Option to allow this too:
         //    `validateNpmPackageName().validForOldPackages`;
         return validateNpmPackageName(v).validForNewPackages;
       });
     }}),
     input({label: 'Version', name: 'version', input () {
-      validate(this.value, _('Invalid_Semver'), (v) => {
+      validate.call(this, this.value, _('Invalid_Semver'), (v) => {
         // eslint-disable-next-line import/no-named-as-default-member
         return semver.valid(v);
       });

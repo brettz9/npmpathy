@@ -9,7 +9,7 @@ function getCjsExportFromNamespace (n) {
 
 
 var builtins = /*#__PURE__*/Object.freeze({
-
+	__proto__: null
 });
 
 var builtins$1 = getCjsExportFromNamespace(builtins);

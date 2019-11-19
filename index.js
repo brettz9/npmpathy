@@ -3,6 +3,7 @@ import HTMLWidgets from './external/HTMLWidgets/htmlwidgets.js';
 import semver from './external/semver/index.es.js';
 
 const map = new Map([
+  ['npmpathy', 'npmpathy'],
   ['Invalid_Semver', 'Invalid Semver']
 ]);
 const _ = (s) => {
@@ -20,6 +21,7 @@ const input = w.input.bind(w),
   textarea = w.textarea.bind(w);
 
 jml('div', {role: 'main'}, [
+  ['h1', [_('npmpathy')]],
   ['form', {$on: {
     submit () {
       // new URLSearchParams();

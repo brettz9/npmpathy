@@ -4,7 +4,7 @@
 import {Selector} from 'testcafe';
 
 fixture`TestCafe UI tests`
-  .page`http://localhost:8050/`;
+  .page`http://localhost:8045/`;
 
 test('Main application: Has package name input', async (t) => {
   const nameInputSelector = Selector('input[name="name"]');

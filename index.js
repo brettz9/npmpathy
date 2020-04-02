@@ -48,7 +48,6 @@ jml('div', {role: 'main'}, [
     }}),
     input({label: 'Version', name: 'version', input () {
       validate.call(this, this.value, _('Invalid_Semver'), (v) => {
-        // eslint-disable-next-line import/no-named-as-default-member
         return semver.valid(v);
       });
     }}),

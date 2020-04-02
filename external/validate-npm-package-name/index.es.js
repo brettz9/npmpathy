@@ -6,8 +6,6 @@ function getCjsExportFromNamespace (n) {
 	return n && n['default'] || n;
 }
 
-
-
 var builtins = /*#__PURE__*/Object.freeze({
 	__proto__: null
 });
